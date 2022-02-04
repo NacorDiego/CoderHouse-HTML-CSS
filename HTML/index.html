@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto-final</title>
+    <!-- link para utilizar íconos de FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+<body>
+    <div class="contenedorHeader">
+        <header>
+            <nav class="nav">
+                <!-- LOGO -->
+                <a href="#" class="nav__logo">
+                    <img class="nav__imgLogo" src="../imagenes/logo2.svg" alt="Logo">
+                </a>
+                
+                <!-- BARRA DE NAVEGACIÓN -->
+                <ul class="nav__lista">
+                    <li class="nav__itemLista itemLista">
+                        <a href="#">Pesca</a>
+                    </li>
+                    <li class="nav__itemLista itemLista">
+                        <a href="#">Señuelos</a>
+                    </li>
+                    <li class="nav__itemLista itemLista">
+                        <a href="#">Camping</a>
+                    </li>
+                    <li class="nav__itemLista itemLista">
+                        <a href="#">Indumentaria</a>
+                    </li>
+                    <li class="nav__itemLista itemLista">
+                        <a href="#">Cuchilleria</a>
+                    </li>
+                    <li class="nav__itemLista itemLista">
+                        <a href="#">Otros</a>
+                    </li>
+                </ul>
+                        
+                <!-- ICONO DE LUPA (BUSQUEDA)-->
+                <i class="fas fa-search nav__busqueda"></i>
+            </nav>
+        </header>
+    </div>
+    
+    <div class="contenedor">
+        <!-- SECCIÓN DE PORTADA -->
+        <article class="portada">
+            <!-- PORTADA CON CARRUSEL DE FOTOS -->
+            <!-- Aún no sé hacer esto, asique solo dejaré una foto en reemplazo -->
+            <!-- <img src="./imagenes/portada.jpg" alt="Imagen de portada" class="portada__img"> -->
+        </article>
+    
+        <!-- SECCIÓN DE ARTICULOS QUE VENDEMOS-->
+        <article class="mercaderia">
+            <div class="mercaderia__titulos">
+                <!-- TITULO Y SUBTITULO -->
+                <h1 class="titulo mercaderia__h1">ARTICULOS DE PESCA Y CAMPING</h1>
+                <h3 class="titulo mercaderia__h3">Conocé lo que vendemos</h3>
+            </div>
+    
+            <!-- ICONOS DE CATEGORÍAS LINKEABLES-->
+            <ul class="mercaderia__lista">
+                <li class="mercaderia__itemLista">
+                    <div class="mercaderia__contenedorItem">
+                        <!-- Categoría PESCA -->
+                        <img src="./imagenes/pesca.svg" alt="seccion pesca" class="mercaderia__iconos"> 
+                    </div>
+                </li>
+                <li class="mercaderia__itemLista">
+                    <div class="mercaderia__contenedorItem">
+                        <!-- Categoría SEÑUELOS -->
+                        <img src="./imagenes/señuelo.svg" alt="seccion señuelos" class="mercaderia__iconos"/>
+                    </div>
+                </li>
+                <li class="mercaderia__itemLista">
+                    <div class="mercaderia__contenedorItem">
+                        <!-- Categoría INDUMENTARIA -->
+                        <img src="./imagenes/indumentaria.svg" alt="seccion indumentaria" class="mercaderia__iconos">
+                    </div>
+                </li>
+                <li class="mercaderia__itemLista">
+                    <div class="mercaderia__contenedorItem">
+                        <!-- Categoría CAMPING -->
+                        <img src="./imagenes/camping.svg" alt="seccion camping" class="mercaderia__iconos">
+                    </div>
+                </li>
+                <li class="mercaderia__itemLista">
+                    <div class="mercaderia__contenedorItem">
+                        <!-- Categoría CUCHILLERÍA -->
+                        <img src="./imagenes/cuchillo2.svg" alt="seccion cuchilleria" class="mercaderia__iconos"/>
+                    </div>
+                </li>
+                <li class="mercaderia__itemLista">
+                    <div class="mercaderia__contenedorItem">
+                        <!-- Categoría VARIADO -->
+                        <img src="./imagenes/variado.svg" alt="seccion variados" class="mercaderia__iconos"/>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    
+        <!-- SECCIÓN DONDE ESTAMOS -->
+        <article class="ubicacion">
+            <!-- MAPA DE GOOGLE MAPS CON UBICACIÓN -->
+            <h2 class="titulo ubicacion__titulo">DONDE ESTAMOS</h2>
+            <iframe class="ubicacion__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d972.3011311347514!2d-57.96935427771034!3d-34.946127029474404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1642467983749!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </article>
+    </div>
+
+    <div class="contenedorFooter">
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer__arriba">
+                <!-- Redes sociales -->
+                <div class="footer__contenedor footer__contenedor--redes">
+                    <ul class="footer__lista">
+                        <li class="footer__itemLista--redes itemLista">
+                            <span class="footer__encabezado">Seguinos en nuestras redes:</span>
+                            <a href="https://es-la.facebook.com/" target="_blank" class="icono-facebook">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                        </li>
+                        <li class="footer__itemLista--whatsapp itemLista">
+                            <!-- WHATSAPP -->
+                            <span class="footer__encabezado">Hablanos por Whatsapp: </span>
+                            <i class="fab fa-whatsapp-square"></i>
+                        </li>
+                        <li class="footer__itemLista itemLista">
+                            <!-- Teléfono fijo -->
+                            <span class="footer__encabezado">Llamanos por teléfono:</span>
+                            <i class="fas fa-phone-square"></i>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Horarios de atención -->
+                <div class="footer__contenedor footer__contenedor--horarios">                
+                    <p class="footer__encabezado--horarios"><i class="fas fa-clock"></i> Horarios de atención:</p>                
+                    <span>Lunes a Sábados de 9:00 a 12:30 y de 16:00 a 20:00</span>
+                </div>
+                
+                <div class="footer__contenedor footer__contenedor--secciones">
+                    <!-- LINKS FOOTER -->
+                    <ul class="footer__lista footer__lista--secciones">
+                        <li class="footer__itemLista footer__itemLista--secciones itemLista">
+                            <a href="./secciones/quienesSomos.html" target="_blank">Quienes somos</a>
+                        </li>
+                        <li class="footer__itemLista footer__itemLista--secciones itemLista">
+                            <a href="./secciones/preguntasFrecuentes.html" target="_blank">Preguntas frecuentes</a>
+                        </li>
+                        <li class="footer__itemLista footer__itemLista--secciones itemLista">
+                            <a href="./secciones/blog.html" target="_blank">Blog</a>
+                        </li>
+                        <li class="footer__itemLista footer__itemLista--secciones itemLista">
+                            <a href="./secciones/contacto.html" target="_blank">Contacto</a>                    
+                        </li>
+                    </ul>        
+                </div>
+            </div>
+    
+            <div class="footer__contenedor--copyright">
+                <span class="footer__copyright">Copyright 2022 © by NDiego</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
