@@ -620,6 +620,8 @@ header, footer, .contenedor {
     /* padding-left: 30px; */
     overflow: hidden;
     height: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__input-busqueda, .header__boton-busqueda {
@@ -632,6 +634,7 @@ header, footer, .contenedor {
 .header__input-busqueda {
     border: none;
     color: #666;
+    padding-left: 7px;
 }
 
 .header__input-busqueda:focus {
@@ -820,9 +823,28 @@ header, footer, .contenedor {
 
 @media screen and (max-device-width: 425px){
     .nav {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: flex-start;
+    }
+
+    .nav__lista {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav__itemLista {
+        padding: 0;
+    }
+
+    .nav__itemLista a {
+        font-size: 1.4rem;
+    }
+
+    .header__form {
+        width: 100%;
     }
 }
 
@@ -835,6 +857,7 @@ header, footer, .contenedor {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         align-items: center;
+        row-gap: 25px;
     }
 
     .nav__logo {
@@ -843,11 +866,25 @@ header, footer, .contenedor {
 
     .nav__lista {
         grid-area: nav;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 10px;
+    }
+
+    .nav__itemLista {
+        text-align: center;
+    }
+
+    .nav__itemLista a {
+        font-size: 1.3rem;
     }
 
     .nav__busqueda {
         grid-area: busqueda;
     }
+
+
 
     /* Venta de acticulos */
 
