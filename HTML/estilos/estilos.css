@@ -468,13 +468,11 @@ body {
     background-color: #ABA9C3;
 }
 
-/* APLICANDO FLEXBOX */
+/* APLICANDO GRID INDEX */
 
 .nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
 }
 
@@ -772,4 +770,30 @@ header, footer, .contenedor {
     border: none;
     font-family: 'roboto', sans-serif;
     padding: 10px 0;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (max-device-width: 768px){
+    /* grid tablet */
+    .nav {
+        display: grid;
+        grid-template-areas:    "logo busqueda" 
+                                "nav nav";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+
+    .nav__logo {
+        grid-area: logo;
+    }
+
+    .nav__lista {
+        grid-area: nav;
+    }
+
+    .nav__busqueda {
+        grid-area: busqueda;
+    }
 }
