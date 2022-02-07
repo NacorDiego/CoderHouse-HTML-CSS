@@ -608,6 +608,50 @@ header, footer, .contenedor {
     padding: 0 30px;
 }
 
+.header__form {
+    min-width: 240px;
+}
+
+.header__form fieldset {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    /* padding-left: 30px; */
+    overflow: hidden;
+    height: 40px;
+}
+
+.header__input-busqueda, .header__boton-busqueda {
+    position: relative;
+    width: 85%px;
+    height: 40px;
+    padding: 0;
+}
+
+.header__input-busqueda {
+    border: none;
+    color: #666;
+}
+
+.header__input-busqueda:focus {
+    outline: none;
+}
+
+.header__boton-busqueda {
+    border: none;
+    width: 15%;
+    background-color: #FE9021;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+}
+
+.boton__icono {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
 .portada {
     height: 75vh;
     background-image: url(../imagenes/portada.jpg);
@@ -617,7 +661,7 @@ header, footer, .contenedor {
 
 .mercaderia {
     margin: 30px 0;
-    height: 55vh;
+    min-height: 55vh;
 }
 
 .mercaderia__h1 {
@@ -774,7 +818,15 @@ header, footer, .contenedor {
 
 /* MEDIA QUERYS */
 
-@media screen and (max-device-width: 768px){
+@media screen and (max-device-width: 425px){
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-device-width: 426px) and (max-device-width: 768px){
     /* grid tablet */
     .nav {
         display: grid;
@@ -795,5 +847,15 @@ header, footer, .contenedor {
 
     .nav__busqueda {
         grid-area: busqueda;
+    }
+
+    /* Venta de acticulos */
+
+    .mercaderia__h1 {
+        text-align: center;
+    }
+
+    .mercaderia__contenedor-lista {
+        display: block;
     }
 }
