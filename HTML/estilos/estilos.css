@@ -430,15 +430,23 @@ body {
 }
 
 .titulo__secciones {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
 .quienes__h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.quienes__seccion p {
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .quienes__h5 {
-    font-size: 0.95rem;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
 /* CSS BÁSICO - PREGUNTAS FRECUENTES */
@@ -1018,7 +1026,7 @@ header, footer, .contenedor {
         grid-template-areas: "redes secciones"
                              "horarios horarios"
                              "copyr copyr";
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
         grid-template-rows: 1.5fr 1fr auto;
         row-gap: 50px;
         column-gap: 30px;
@@ -1044,6 +1052,22 @@ header, footer, .contenedor {
     /* QUIENES SOMOS */
 
     .contenedor {
-        margin-top: 170px;
+        margin-top: 210px;
+    }
+
+    .nav__lista {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lista__contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .titulo__secciones {
+        margin-bottom: 70px;
     }
 }
