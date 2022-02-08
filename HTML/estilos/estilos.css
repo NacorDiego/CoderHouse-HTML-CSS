@@ -382,7 +382,11 @@ body {
     background-color: #fcf7f8;
 }
 
-.contenedorHeader, .contenedorFooter {
+.contenedorHeader {
+    background-color: rgb(39, 93, 173, 0.9);
+}
+
+.contenedorFooter {
     background-color: #275dad;
     color: #ffffff;
 }
@@ -822,6 +826,9 @@ header, footer, .contenedor {
 /* MEDIA QUERYS */
 
 @media screen and (max-device-width: 425px){
+    
+    /* HEADER */
+
     .nav {
         display: flex;
         flex-direction: column;
@@ -846,6 +853,26 @@ header, footer, .contenedor {
     .header__form {
         width: 100%;
     }
+
+    /* PORTADA */
+
+    .portada {
+        display: none;
+    }
+
+    /* MERCADERIA */
+
+    .mercaderia {
+        margin-top: 400px;
+    }
+
+    .mercaderia__h1 {
+        text-align: center;
+    }
+
+    /* UBICACIÓN */
+
+    
 }
 
 @media screen and (min-device-width: 426px) and (max-device-width: 768px){
