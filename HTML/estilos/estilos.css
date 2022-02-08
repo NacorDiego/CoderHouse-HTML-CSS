@@ -944,6 +944,8 @@ header, footer, .contenedor {
         grid-area: busqueda;
     }
 
+    /* INDEX */
+
     /* PORTADA */
 
     .portada {
@@ -969,10 +971,12 @@ header, footer, .contenedor {
     .footer__arriba {
         display: grid;
         grid-template-areas: "redes secciones"
-                             "horarios horarios";
+                             "horarios horarios"
+                             "copyr copyr";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-
+        grid-template-rows: 1.5fr 1fr auto;
+        row-gap: 50px;
+        column-gap: 30px;
         font-size: 1.2rem;
     }
 
@@ -988,4 +992,13 @@ header, footer, .contenedor {
         grid-area: secciones;
     }
 
+    .footer__contenedor--copyright {
+        grid-area: copyr;
+    }
+
+    /* QUIENES SOMOS */
+
+    .contenedor {
+        margin-top: 170px;
+    }
 }
