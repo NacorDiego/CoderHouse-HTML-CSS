@@ -513,6 +513,19 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 40px;
+}
+
+.footer__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__contenedor--horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .footer__lista--secciones {
@@ -520,6 +533,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .footer__contenedor--copyright {
@@ -706,10 +720,6 @@ header, footer, .contenedor {
     padding: 20px;
 }
 
-.footer__itemLista--redes, .footer__itemLista--whatsapp, .footer__encabezado--horarios {
-    margin-bottom: 35px;
-}
-
 .footer__contenedor--copyright {
     padding: 15px 0;
 }
@@ -872,7 +882,13 @@ header, footer, .contenedor {
 
     /* UBICACIÓN */
 
-    
+    .ubicacion__titulo {
+        text-align: center;
+    }
+
+    .footer__texto {
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (min-device-width: 426px) and (max-device-width: 768px){
