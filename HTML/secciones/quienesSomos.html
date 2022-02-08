@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,24 +25,28 @@
                 
                 <!-- BARRA DE NAVEGACIÓN -->
                 <ul class="nav__lista">
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Pesca</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Señuelos</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Camping</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Indumentaria</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Cuchilleria</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Otros</a>
-                    </li>
+                    <div class="lista__contenedor">
+                        <li class="nav__itemLista itemLista">
+                            <a href="#">Pesca</a>
+                        </li>
+                        <li class="nav__itemLista itemLista">
+                            <a href="#">Señuelos</a>
+                        </li>
+                        <li class="nav__itemLista itemLista">
+                            <a href="#">Camping</a>
+                        </li>
+                    </div>
+                    <div class="lista__contenedor">
+                        <li class="nav__itemLista itemLista">
+                            <a href="#">Indumentaria</a>
+                        </li>
+                        <li class="nav__itemLista itemLista">
+                            <a href="#">Cuchilleria</a>
+                        </li>
+                        <li class="nav__itemLista itemLista">
+                            <a href="#">Otros</a>
+                        </li>
+                    </div>
                 </ul>
                         
                 <!-- BUSQUEDA -->
@@ -58,7 +65,7 @@
     <div class="contenedor">
         <!-- Artículo de la página -->
         <article class="quienes">
-            <h2 class="titulo titulo__secciones">Quienes somos</h2>
+            <h2 class="titulo titulo__secciones">QUIENES SOMOS</h2>
     
             <div class="quienes__secciones">
                 <!-- SECCIÓN NUESTRO NEGOCIO -->
@@ -99,7 +106,7 @@
                 <!-- Redes sociales -->
                 <div class="footer__contenedor footer__contenedor--redes">
                     <ul class="footer__lista">
-                        <li class="footer__itemLista--redes itemLista">
+                        <li class="footer__texto footer__itemLista--redes itemLista">
                             <span class="footer__encabezado">Seguinos en nuestras redes:</span>
                             <a href="https://es-la.facebook.com/" target="_blank" class="icono-facebook">
                                 <i class="fab fa-facebook-square"></i>
@@ -108,12 +115,12 @@
                                 <i class="fab fa-instagram-square"></i>
                             </a>
                         </li>
-                        <li class="footer__itemLista--whatsapp itemLista">
+                        <li class="footer__texto footer__itemLista--whatsapp itemLista">
                             <!-- WHATSAPP -->
-                            <span class="footer__encabezado">Hablanos por Whatsapp: </span>
+                            <span class="footer__texto footer__encabezado">Hablanos por Whatsapp: </span>
                             <i class="fab fa-whatsapp-square"></i>
                         </li>
-                        <li class="footer__itemLista itemLista">
+                        <li class="footer__texto footer__itemLista itemLista">
                             <!-- Teléfono fijo -->
                             <span class="footer__encabezado">Llamanos por teléfono:</span>
                             <i class="fas fa-phone-square"></i>
@@ -123,33 +130,32 @@
     
                 <!-- Horarios de atención -->
                 <div class="footer__contenedor footer__contenedor--horarios">                
-                    <p class="footer__encabezado--horarios"><i class="fas fa-clock"></i> Horarios de atención:</p>                
-                    <span>Lunes a Sábados de 9:00 a 12:30 y de 16:00 a 20:00</span>
+                    <p class="footer__texto footer__encabezado--horarios"><i class="fas fa-clock"></i> Horarios de atención:</p>                
+                    <span class="footer__texto">Lunes a Sábados de 9:00 a 12:30 y de 16:00 a 20:00</span>
                 </div>
                 
                 <div class="footer__contenedor footer__contenedor--secciones">
                     <!-- LINKS FOOTER -->
                     <ul class="footer__lista footer__lista--secciones">
-                        <li class="footer__itemLista footer__itemLista--secciones itemLista">
+                        <li class="footer__texto footer__itemLista footer__itemLista--secciones itemLista">
                             <a href="#">Quienes somos</a>
                         </li>
-                        <li class="footer__itemLista footer__itemLista--secciones itemLista">
+                        <li class="footer__texto footer__itemLista footer__itemLista--secciones itemLista">
                             <a href="./preguntasFrecuentes.html">Preguntas frecuentes</a>
                         </li>
-                        <li class="footer__itemLista footer__itemLista--secciones itemLista">
+                        <li class="footer__texto footer__itemLista footer__itemLista--secciones itemLista">
                             <a href="./blog.html">Blog</a>
                         </li>
-                        <li class="footer__itemLista footer__itemLista--secciones itemLista">
+                        <li class="footer__texto footer__itemLista footer__itemLista--secciones itemLista">
                             <a href="./contacto.html">Contacto</a>                    
                         </li>
                     </ul>        
                 </div>
-                
-                <div class="footer__contenedor--copyright">
-                    <span class="footer__copyright">Copyright 2022 © by NDiego</span>
-                </div>
             </div>
     
+            <div class="footer__contenedor--copyright">
+                <span class="footer__copyright">Copyright 2022 © by NDiego</span>
+            </div>
         </footer>
     </div>
 

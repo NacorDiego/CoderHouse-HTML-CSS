@@ -361,11 +361,7 @@
 /* CSS BÁSICO */
 
 body {
-    font-family: 'roboto', sans-serif   ;
-}
-
-.titulo {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 li {
@@ -854,9 +850,15 @@ header, footer, .contenedor {
     }
 
     .nav__lista {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lista__contenedor {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     .nav__itemLista {
@@ -900,7 +902,50 @@ header, footer, .contenedor {
     /* FOOTER */
 
     .footer__texto {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+    }
+
+    /* --------------------------------------- */
+    /* QUIENES SOMOS */
+    /* --------------------------------------- */
+
+    .contenedor {
+        margin-top: 300px;
+    }
+
+    .quienes__secciones {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .quienes__seccion {
+        padding: 0;
+    }
+
+    .quienes__seccion--negocio, .quienes__seccion--personal {
+        width: 100%;
+    }
+
+    .titulo__secciones {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+    .quienes__h3 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .quienes__seccion p {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .quienes__h5 {
+        font-size: 1.4rem;
+        font-weight: 500;
     }
 }
 
