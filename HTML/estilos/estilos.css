@@ -840,6 +840,8 @@ header, footer, .contenedor {
 
 /* MEDIA QUERYS */
 
+/* RESPONSIVE MOBILES 425px */
+
 @media screen and (max-device-width: 425px){
     
     /* HEADER */
@@ -902,7 +904,7 @@ header, footer, .contenedor {
     }
 }
 
-/* GRID TABLET */
+/* RESPONSIVE TABLET 768px */
 
 @media screen and (min-device-width: 426px) and (max-device-width: 768px){
     
