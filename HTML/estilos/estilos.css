@@ -886,13 +886,19 @@ header, footer, .contenedor {
         text-align: center;
     }
 
+    /* FOOTER */
+
     .footer__texto {
         font-size: 1.3rem;
     }
 }
 
+/* GRID TABLET */
+
 @media screen and (min-device-width: 426px) and (max-device-width: 768px){
-    /* grid tablet */
+    
+    /* NAV */
+
     .nav {
         display: grid;
         grid-template-areas:    "logo busqueda" 
@@ -927,9 +933,13 @@ header, footer, .contenedor {
         grid-area: busqueda;
     }
 
+    /* PORTADA */
 
+    .portada {
+        margin-top: 170px;
+    }
 
-    /* Venta de acticulos */
+    /* MERCADERÍA */
 
     .mercaderia__h1 {
         text-align: center;
@@ -938,4 +948,29 @@ header, footer, .contenedor {
     .mercaderia__contenedor-lista {
         display: block;
     }
+
+    /* FOOTER */
+
+    .footer__arriba {
+        display: grid;
+        grid-template-areas: "redes secciones"
+                             "horarios horarios";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        font-size: 1.2rem;
+    }
+
+    .footer__contenedor--redes {
+        grid-area: redes;
+    }
+
+    .footer__contenedor--horarios {
+        grid-area: horarios;
+    }
+
+    .footer__contenedor--secciones {
+        grid-area: secciones;
+    }
+
 }
