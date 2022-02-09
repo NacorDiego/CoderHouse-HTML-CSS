@@ -361,11 +361,7 @@
 /* CSS BÁSICO */
 
 body {
-    font-family: 'roboto', sans-serif   ;
-}
-
-.titulo {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 li {
@@ -434,15 +430,23 @@ body {
 }
 
 .titulo__secciones {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
 .quienes__h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.quienes__seccion p {
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .quienes__h5 {
-    font-size: 0.95rem;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
 /* CSS BÁSICO - PREGUNTAS FRECUENTES */
@@ -489,6 +493,12 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 40px;
+}
+
+.lista__contenedor {
+    display: flex;
+    flex-direction: row;
     gap: 40px;
 }
 
@@ -854,9 +864,15 @@ header, footer, .contenedor {
     }
 
     .nav__lista {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lista__contenedor {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     .nav__itemLista {
@@ -900,7 +916,50 @@ header, footer, .contenedor {
     /* FOOTER */
 
     .footer__texto {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+    }
+
+    /* --------------------------------------- */
+    /* QUIENES SOMOS */
+    /* --------------------------------------- */
+
+    .contenedor {
+        margin-top: 300px;
+    }
+
+    .quienes__secciones {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .quienes__seccion {
+        padding: 0;
+    }
+
+    .quienes__seccion--negocio, .quienes__seccion--personal {
+        width: 100%;
+    }
+
+    .titulo__secciones {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+    .quienes__h3 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .quienes__seccion p {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .quienes__h5 {
+        font-size: 1.4rem;
+        font-weight: 500;
     }
 }
 
@@ -944,6 +1003,8 @@ header, footer, .contenedor {
         grid-area: busqueda;
     }
 
+    /* INDEX */
+
     /* PORTADA */
 
     .portada {
@@ -969,10 +1030,12 @@ header, footer, .contenedor {
     .footer__arriba {
         display: grid;
         grid-template-areas: "redes secciones"
-                             "horarios horarios";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-
+                             "horarios horarios"
+                             "copyr copyr";
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1.5fr 1fr auto;
+        row-gap: 50px;
+        column-gap: 30px;
         font-size: 1.2rem;
     }
 
@@ -988,4 +1051,37 @@ header, footer, .contenedor {
         grid-area: secciones;
     }
 
+    .footer__contenedor--copyright {
+        grid-area: copyr;
+    }
+
+    /* QUIENES SOMOS */
+
+    .contenedor {
+        margin-top: 210px;
+    }
+
+    .nav__lista {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .lista__contenedor {
+        justify-content: space-between;
+    }
+
+    .nav__itemLista {
+        padding: 0;
+    }
+
+    .lista__contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .titulo__secciones {
+        margin-bottom: 70px;
+    }
 }
