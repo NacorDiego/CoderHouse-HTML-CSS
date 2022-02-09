@@ -496,6 +496,12 @@ body {
     gap: 40px;
 }
 
+.lista__contenedor {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
 .mercaderia__titulos {
     display: flex;
     flex-direction: column;
@@ -1059,6 +1065,14 @@ header, footer, .contenedor {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+    
+    .lista__contenedor {
+        justify-content: space-between;
+    }
+
+    .nav__itemLista {
+        padding: 0;
     }
 
     .lista__contenedor {
