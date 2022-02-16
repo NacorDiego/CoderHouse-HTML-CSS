@@ -21,28 +21,39 @@
                 
                 <!-- BARRA DE NAVEGACIÓN -->
                 <ul class="nav__lista">
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Pesca</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Señuelos</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Camping</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Indumentaria</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Cuchilleria</a>
-                    </li>
-                    <li class="nav__itemLista itemLista">
-                        <a href="#">Otros</a>
-                    </li>
+                    <div class="lista__contenedor">
+                        <li class="nav__itemLista itemLista">
+                            <a href="#">Pesca</a>
+                        </li>
+                        <li class="nav__itemLista itemLista">
+                            <a href="#">Señuelos</a>
+                        </li>
+                        <li class="nav__itemLista itemLista">
+                            <a href="#">Camping</a>
+                        </li>
+                    </div>
+                    <div class="lista__contenedor">
+                        <li class="nav__itemLista itemLista">
+                            <a href="#">Indumentaria</a>
+                        </li>
+                        <li class="nav__itemLista itemLista">
+                            <a href="#">Cuchilleria</a>
+                        </li>
+                        <li class="nav__itemLista itemLista">
+                            <a href="#">Otros</a>
+                        </li>
+                    </div>
                 </ul>
                         
-                <!-- ICONO DE LUPA (BUSQUEDA)-->
-                <i class="fas fa-search nav__busqueda"></i>
+                <!-- BUSQUEDA -->
+                <form action="" class="header__form">
+                    <fieldset>
+                        <input type="search" class="header__input-busqueda" placeholder=" Buscar...">
+                        <button type="submit" class="header__boton-busqueda">
+                            <i class="fas fa-search boton__icono"></i>
+                        </button>
+                    </fieldset>
+                </form>
             </nav>
         </header>
     </div>
